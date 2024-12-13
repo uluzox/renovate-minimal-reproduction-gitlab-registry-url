@@ -1,17 +1,15 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
+# 33090
 
 ## Current behavior
 
-Explain the current behavior here.
+Check for gitlab-releases dependency on self-hosted-gitlab.com. Despite recognising
+the registryUrl=gitlab.com
 
 ## Expected behavior
 
-Explain the expected behavior here.
+Checks for gitlab-releases dependency on gitlab.com
 
 ## Link to the Renovate issue or Discussion
 
 Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/33090
