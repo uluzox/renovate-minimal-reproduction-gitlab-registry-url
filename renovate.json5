@@ -1,106 +1,97 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "onboarding": false,
-  "forkProcessing": "enabled",
-  "osvVulnerabilityAlerts": true,
-  "gitAuthor": "Renovate Bot <no-reply@foo.bar>",
-  "requireConfig": "ignored",
-  "repositoryCache": "enabled",
-  "optimizeForDisabled": true,
-  "baseDir": "/tmp/renovate",
-  "extends": [
-    "config:best-practices",
-    ":automergeDigest",
-    "customManagers:dockerfileVersions",
-    "customManagers:gitlabPipelineVersions",
-    "workarounds:reduceRepologyServerLoad",
-    "workarounds:typesNodeVersioning",
-    "mergeConfidence:all-badges"
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  onboarding: false,
+  forkProcessing: 'enabled',
+  osvVulnerabilityAlerts: true,
+  gitAuthor: 'Renovate Bot <no-reply@foo.bar>',
+  requireConfig: 'ignored',
+  repositoryCache: 'enabled',
+  optimizeForDisabled: true,
+  baseDir: '/tmp/renovate',
+  extends: [
+    'config:best-practices',
+    ':automergeDigest',
+    'customManagers:dockerfileVersions',
+    'customManagers:gitlabPipelineVersions',
+    'workarounds:typesNodeVersioning',
+    'mergeConfidence:all-badges',
   ],
-  "ignorePresets": [
-    // need to ignore these presets and potentially manually enable them in our packageRules,
-    // because in Renovate's extension system presets take precedence over our config
-    // https://docs.renovatebot.com/config-overview/#extends
-    ":ignoreModulesAndTests",
-    "docker:pinDigests",
-    // ignored because we want to define the semanticCommitType ourselves
-    ":semanticPrefixFixDepsChoreOthers",
+  ignorePresets: [
+    ':ignoreModulesAndTests',
+    'docker:pinDigests',
+    ':semanticPrefixFixDepsChoreOthers',
   ],
-  "dependencyDashboard": true,
-  "prHourlyLimit": 20,
-  "enabledManagers": [
-    "composer",
-    "custom.regex",
-    "dockerfile",
-    "gitlabci",
-    "gitlabci-include",
-    "gomod",
-    "kubernetes",
-    "helmv3",
-    "kustomize",
-    "npm",
-    "poetry",
-    "pre-commit",
-    "terraform",
-    "terraform-version"
+  dependencyDashboard: true,
+  prHourlyLimit: 20,
+  enabledManagers: [
+    'composer',
+    'custom.regex',
+    'dockerfile',
+    'gitlabci',
+    'gitlabci-include',
+    'gomod',
+    'kubernetes',
+    'helmv3',
+    'kustomize',
+    'npm',
+    'poetry',
+    'pre-commit',
+    'terraform',
+    'terraform-version',
   ],
-  "packageRules": [
+  packageRules: [
     {
-      // taken from present :semanticPrefixFixDepsChoreOthers
-      // https://docs.renovatebot.com/presets-default/#semanticprefixfixdepschoreothers
-      "matchDepTypes": [
-        "dependencies",
-        "require"
+      matchDepTypes: [
+        'dependencies',
+        'require',
       ],
-      "semanticCommitType": "fix"
+      semanticCommitType: 'fix',
     },
     {
-      // taken from present :semanticPrefixFixDepsChoreOthers
-      // https://docs.renovatebot.com/presets-default/#semanticprefixfixdepschoreothers
-      "matchDepTypes": [
-        "dependencies",
-        "extras"
+      matchDepTypes: [
+        'dependencies',
+        'extras',
       ],
-      "matchManagers": [
-        "poetry"
+      matchManagers: [
+        'poetry',
       ],
-      "semanticCommitType": "fix"
+      semanticCommitType: 'fix',
     },
     {
-      "description": [
-        "Enable docker digest pinning"
+      description: [
+        'Enable docker digest pinning',
       ],
-      "matchDatasources": [
-        "docker"
+      matchDatasources: [
+        'docker',
       ],
-      "pinDigests": true
+      pinDigests: true,
     },
     {
-      "description": [
-        "except where explicitly disabled"
+      description: [
+        'except where explicitly disabled',
       ],
-      "matchDatasources": [
-        "docker"
+      matchDatasources: [
+        'docker',
       ],
-      "matchDepTypes": [
-        "no-digest"
+      matchDepTypes: [
+        'no-digest',
       ],
-      "pinDigests": false
+      pinDigests: false,
     },
     {
-      "description": [
-        "Configure registry URLs"
+      description: [
+        'Configure registry URLs',
       ],
-      "matchDatasources": [
-        "gitlab-releases",
-        "gitlab-tags",
-        "gitlab-packages"
+      matchDatasources: [
+        'gitlab-releases',
+        'gitlab-tags',
+        'gitlab-packages',
       ],
-      "registryUrls": [
-        "https://self-hosted-gitlab.com/"
-      ]
-    }
+      registryUrls: [
+        'https://self-hosted-gitlab.com/',
+      ],
+    },
   ],
-  "commitBody": "Refs: NO-JIRA",
-  "rebaseWhen": "behind-base-branch"
+  commitBody: 'Refs: NO-JIRA',
+  rebaseWhen: 'behind-base-branch',
 }
