@@ -1,0 +1,391 @@
+DEBUG: Using RE2 regex engine
+DEBUG: Parsing configs
+DEBUG: Checking for config file in config.js
+DEBUG: No config file found on disk - skipping
+DEBUG: File config
+       "config": {}
+DEBUG: CLI config
+       "config": {
+         "repositories": ["uluzox/renovate-minimal-reproduction-gitlab-registry-url"],
+         "dryRun": "full",
+         "requireConfig": "ignored",
+         "schedule": [],
+         "platform": "github",
+         "token": "***********"
+       }
+DEBUG: Env config
+       "config": {"hostRules": [], "token": "***********"}
+DEBUG: Combined config
+       "config": {
+         "hostRules": [],
+         "token": "***********",
+         "repositories": ["uluzox/renovate-minimal-reproduction-gitlab-registry-url"],
+         "dryRun": "full",
+         "requireConfig": "ignored",
+         "schedule": [],
+         "platform": "github"
+       }
+DEBUG: Enabling forkProcessing while in non-autodiscover mode
+DEBUG: Enabling onboardingNoDeps while in non-autodiscover mode
+DEBUG: Found valid git version: 2.39.3
+DEBUG: Setting global hostRules
+DEBUG: Using default github endpoint: https://api.github.com/
+DEBUG: hostRules: authentication already set for api.github.com
+DEBUG: Using queue: host=api.github.com, concurrency=16
+DEBUG: GET https://api.github.com/user/emails = (code=ERR_NON_2XX_3XX_RESPONSE, statusCode=403 retryCount=0, duration=170)
+DEBUG: Cannot read user/emails endpoint on GitHub to retrieve gitAuthor
+DEBUG: Platform config
+       "platformConfig": {
+         "hostType": "github",
+         "endpoint": "https://api.github.com/",
+         "isGHApp": false,
+         "isGhe": false,
+         "userDetails": {"username": "uluzox", "name": null, "id": 7103208},
+         "userEmail": null
+       },
+       "renovateUsername": "uluzox"
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: Using baseDir: /var/folders/fv/gjhhz5kx68l3wqj9_m8dgm180000gn/T/renovate
+DEBUG: Using cacheDir: /var/folders/fv/gjhhz5kx68l3wqj9_m8dgm180000gn/T/renovate/cache
+DEBUG: Using containerbaseDir: /var/folders/fv/gjhhz5kx68l3wqj9_m8dgm180000gn/T/renovate/cache/containerbase
+DEBUG: Initializing Renovate internal cache into /var/folders/fv/gjhhz5kx68l3wqj9_m8dgm180000gn/T/renovate/cache/renovate/renovate-cache-v1
+DEBUG: Commits limit = null
+DEBUG: Setting global hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+DEBUG: validatePresets()
+DEBUG: Reinitializing hostRules for repo
+DEBUG: Clearing hostRules
+DEBUG: Adding token authentication for api.github.com (hostType=github) to hostRules
+ INFO: Repository started (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "renovateVersion": "39.64.0"
+DEBUG: Using localDir: /var/folders/fv/gjhhz5kx68l3wqj9_m8dgm180000gn/T/renovate/repos/github/uluzox/renovate-minimal-reproduction-gitlab-registry-url (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: initRepo("uluzox/renovate-minimal-reproduction-gitlab-registry-url") (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: hostRules: authentication already set for api.github.com (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using queue: host=api.github.com, concurrency=16 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: uluzox/renovate-minimal-reproduction-gitlab-registry-url default branch = main (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using personal access token for git init (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Resetting npmrc (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Resetting npmrc (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: checkOnboarding() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: isOnboarded() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Config file will be ignored (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Repo is onboarded (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: migrateAndValidate() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: No config migration necessary (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Found repo ignorePaths (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "ignorePaths": ["**/node_modules/**", "**/bower_components/**"]
+DEBUG: No vulnerability alerts enabled for repo (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: No vulnerability alerts found (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: No baseBranches (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: extract() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Setting current branch to main (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Initializing git repository into /var/folders/fv/gjhhz5kx68l3wqj9_m8dgm180000gn/T/renovate/repos/github/uluzox/renovate-minimal-reproduction-gitlab-registry-url (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Performing blobless clone (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: git clone completed (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "durationMs": 818
+DEBUG: latest repository commit (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "latestCommit": {
+         "hash": "f0d12b8cc5b18c9f912cd469e55074989fc17c26",
+         "date": "2024-12-13T12:22:38+01:00",
+         "message": "feat: init",
+         "refs": "HEAD -> main, origin/main, origin/HEAD",
+         "body": "Refs: NO-JIRA\n",
+         "author_name": "Thorsten Hersam",
+         "author_email": "7103208+uluzox@users.noreply.github.com"
+       }
+DEBUG: latest commit (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "branchName": "main",
+       "latestCommitDate": "2024-12-13T12:22:38+01:00"
+DEBUG: Using file match: (^|/)tasks/[^/]+\.ya?ml$ for manager ansible (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)(galaxy|requirements)(\.ansible)?\.ya?ml$ for manager ansible-galaxy (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.tool-versions$ for manager asdf (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/).azuredevops/.+\.ya?ml$ for manager azure-pipelines (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: azure.*pipelines?.*\.ya?ml$ for manager azure-pipelines (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)batect(-bundle)?\.ya?ml$ for manager batect (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)batect$ for manager batect-wrapper (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)WORKSPACE(|\.bazel|\.bzlmod)$ for manager bazel (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.WORKSPACE\.bazel$ for manager bazel (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.bzl$ for manager bazel (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)MODULE\.bazel$ for manager bazel-module (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.bazelversion$ for manager bazelisk (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.bicep$ for manager bicep (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.?bitbucket-pipelines\.ya?ml$ for manager bitbucket-pipelines (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)bitrise\.ya?ml$ for manager bitrise (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: buildkite\.ya?ml for manager buildkite (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.buildkite/.+\.ya?ml$ for manager buildkite (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)project\.toml$ for manager buildpacks (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)bun\.lockb$ for manager bun (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.bun-version$ for manager bun-version (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Gemfile$ for manager bundler (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.cake$ for manager cake (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Cargo\.toml$ for manager cargo (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.circleci/.+\.ya?ml$ for manager circleci (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)cloudbuild\.ya?ml for manager cloudbuild (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Podfile$ for manager cocoapods (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)([\w-]*)composer\.json$ for manager composer (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)conanfile\.(txt|py)$ for manager conan (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.copier-answers(\..+)?\.ya?ml for manager copier (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)cpanfile$ for manager cpanfile (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)(?:deps|bb)\.edn$ for manager deps-edn (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: ^.devcontainer/devcontainer.json$ for manager devcontainer (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: ^.devcontainer.json$ for manager devcontainer (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)(?:docker-)?compose[^/]*\.ya?ml$ for manager docker-compose (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/|\.)([Dd]ocker|[Cc]ontainer)file$ for manager dockerfile (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$ for manager dockerfile (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.drone\.yml$ for manager droneci (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)fleet\.ya?ml for manager fleet (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (?:^|/)gotk-components\.ya?ml$ for manager flux (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.fvm/fvm_config\.json$ for manager fvm (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.fvmrc$ for manager fvm (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.gitmodules$ for manager git-submodules (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)(workflow-templates|\.(?:github|gitea|forgejo)/(?:workflows|actions))/.+\.ya?ml$ for manager github-actions (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)action\.ya?ml$ for manager github-actions (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.gitlab-ci\.ya?ml$ for manager gitlabci (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.gitlab-ci\.ya?ml$ for manager gitlabci-include (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)gleam.toml$ for manager gleam (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)go\.mod$ for manager gomod (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.gradle(\.kts)?$ for manager gradle (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)gradle\.properties$ for manager gradle (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)gradle/.+\.toml$ for manager gradle (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)buildSrc/.+\.kt$ for manager gradle (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.versions\.toml$ for manager gradle (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)versions.props$ for manager gradle (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)versions.lock$ for manager gradle (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)gradle/wrapper/gradle-wrapper\.properties$ for manager gradle-wrapper (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)requirements\.ya?ml$ for manager helm-requirements (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)values\.ya?ml$ for manager helm-values (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)helmfile\.ya?ml(?:\.gotmpl)?$ for manager helmfile (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Chart\.ya?ml$ for manager helmv3 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)bin/hermit$ for manager hermit (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: ^Formula/[^/]+[.]rb$ for manager homebrew (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.html?$ for manager html (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)plugins\.(txt|ya?ml)$ for manager jenkins (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)jsonnetfile\.json$ for manager jsonnet-bundler (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: ^.+\.main\.kts$ for manager kotlin-script (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)kustomization\.ya?ml$ for manager kustomize (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)project\.clj$ for manager leiningen (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/|\.)pom\.xml$ for manager maven (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: ^(((\.mvn)|(\.m2))/)?settings\.xml$ for manager maven (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.mvn/extensions\.xml$ for manager maven (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|\/).mvn/wrapper/maven-wrapper.properties$ for manager maven-wrapper (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)package\.js$ for manager meteor (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Mintfile$ for manager mint (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.?mise\.toml$ for manager mise (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.?mise/config\.toml$ for manager mise (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)mix\.exs$ for manager mix (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)flake\.nix$ for manager nix (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.node-version$ for manager nodenv (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)package\.json$ for manager npm (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.(?:cs|fs|vb)proj$ for manager nuget (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.(?:props|targets)$ for manager nuget (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)dotnet-tools\.json$ for manager nuget (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)global\.json$ for manager nuget (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.nvmrc$ for manager nvm (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)src/main/features/.+\.json$ for manager osgi (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager pep621 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)[\w-]*requirements([-.]\w+)?\.(txt|pip)$ for manager pip_requirements (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)setup\.py$ for manager pip_setup (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Pipfile$ for manager pipenv (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)pyproject\.toml$ for manager poetry (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.pre-commit-config\.ya?ml$ for manager pre-commit (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)pubspec\.ya?ml$ for manager pub (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Puppetfile$ for manager puppet (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.python-version$ for manager pyenv (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.ruby-version$ for manager ruby-version (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)runtime.txt$ for manager runtime-version (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.sbt$ for manager sbt (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: project/[^/]*\.scala$ for manager sbt (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: project/build\.properties$ for manager sbt (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)repositories$ for manager sbt (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.scalafmt.conf$ for manager scalafmt (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)setup\.cfg$ for manager setup-cfg (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)Package\.swift for manager swift (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.tf$ for manager terraform (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.terraform-version$ for manager terraform-version (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)terragrunt\.hcl$ for manager terragrunt (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.terragrunt-version$ for manager terragrunt-version (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: \.tflint\.hcl$ for manager tflint-plugin (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: ^\.travis\.ya?ml$ for manager travis (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)\.vela\.ya?ml$ for manager velaci (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: (^|/)vendir\.yml$ for manager vendir (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Using file match: ^\.woodpecker(?:/[^/]+)?\.ya?ml$ for manager woodpecker (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Matched 1 file(s) for manager dockerfile: Dockerfile (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Skipping scratch (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: manager extract durations (ms) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "managers": {"dockerfile": 1}
+DEBUG: Found 0 package file(s) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+ INFO: Dependency extraction complete (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url, baseBranch=main)
+       "stats": {"managers": {}, "total": {"fileCount": 0, "depCount": 0}}
+DEBUG: Starting package releases lookups (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url, baseBranch=main)
+DEBUG: PackageFiles.add() - Package file saved for base branch (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url, baseBranch=main)
+DEBUG: Package releases lookups complete (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url, baseBranch=main)
+DEBUG: branchifyUpgrades (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: detectSemanticCommits() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: getCommitMessages (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: semanticCommits: detected "angular" (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: semanticCommits: enabled (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: 0 flattened updates found:  (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Returning 0 branch(es) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: config.repoIsOnboarded=true (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: packageFiles with updates (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url, baseBranch=main)
+       "config": {}
+DEBUG: detectSemanticCommits() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: semanticCommits: returning "enabled" from cache (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: processRepo() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Processing 0 branches:  (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Calculating hourly PRs remaining (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: http cache: saving https://api.github.com/repos/uluzox/renovate-minimal-reproduction-gitlab-registry-url/pulls?per_page=100&state=all&sort=updated&direction=desc&page=1 (etag="21812de88af88bd099856736aed48404ae7de8dd0d4d612093b9803ddcb62df5", lastModified=undefined) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: getPrList success (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "pullsTotal": 0,
+       "requestsTotal": 1,
+       "apiQuotaAffected": true
+DEBUG: currentHourStart=2024-12-13T13:00:00.000+01:00 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: PR hourly limit remaining: 2 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Calculating prConcurrentLimit (10) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: 0 PRs are currently open (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: PR concurrent limit remaining: 10 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Calculated maximum PRs remaining this run: 2 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: PullRequests limit = 2 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Calculating hourly PRs remaining (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: currentHourStart=2024-12-13T13:00:00.000+01:00 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: PR hourly limit remaining: 2 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Calculating branchConcurrentLimit (10) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: 0 already existing branches found:  (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Branch concurrent limit remaining: 10 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Calculated maximum branches remaining this run: 2 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Branches limit = 2 (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Found renovate.json5 config file (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Repository config (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "fileName": "renovate.json5",
+       "config": {
+         "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+         "onboarding": false,
+         "forkProcessing": "enabled",
+         "osvVulnerabilityAlerts": true,
+         "gitAuthor": "Renovate Bot <no-reply@foo.bar>",
+         "requireConfig": "ignored",
+         "repositoryCache": "enabled",
+         "optimizeForDisabled": true,
+         "baseDir": "/tmp/renovate",
+         "extends": [
+           "config:best-practices",
+           ":automergeDigest",
+           "customManagers:dockerfileVersions",
+           "customManagers:gitlabPipelineVersions",
+           "workarounds:reduceRepologyServerLoad",
+           "workarounds:typesNodeVersioning",
+           "mergeConfidence:all-badges"
+         ],
+         "ignorePresets": [
+           ":ignoreModulesAndTests",
+           "docker:pinDigests",
+           ":semanticPrefixFixDepsChoreOthers"
+         ],
+         "dependencyDashboard": true,
+         "prHourlyLimit": 20,
+         "enabledManagers": [
+           "composer",
+           "custom.regex",
+           "dockerfile",
+           "gitlabci",
+           "gitlabci-include",
+           "gomod",
+           "kubernetes",
+           "helmv3",
+           "kustomize",
+           "npm",
+           "poetry",
+           "pre-commit",
+           "terraform",
+           "terraform-version"
+         ],
+         "packageRules": [
+           {"matchDepTypes": ["dependencies", "require"], "semanticCommitType": "fix"},
+           {
+             "matchDepTypes": ["dependencies", "extras"],
+             "matchManagers": ["poetry"],
+             "semanticCommitType": "fix"
+           },
+           {
+             "description": ["Enable docker digest pinning"],
+             "matchDatasources": ["docker"],
+             "pinDigests": true
+           },
+           {
+             "description": ["except where explicitly disabled"],
+             "matchDatasources": ["docker"],
+             "matchDepTypes": ["no-digest"],
+             "pinDigests": false
+           },
+           {
+             "description": ["Configure registry URLs"],
+             "matchDatasources": ["gitlab-releases", "gitlab-tags", "gitlab-packages"],
+             "registryUrls": ["https://self-hosted-gitlab.com/"]
+           }
+         ],
+         "commitBody": "Refs: NO-JIRA",
+         "rebaseWhen": "behind-base-branch"
+       }
+DEBUG: http cache: saving https://api.github.com/repos/uluzox/renovate-minimal-reproduction-gitlab-registry-url/contents/renovate.json5 (etag=W/"f2c4f78246affae17241fdcb45d69ffae8475089", lastModified=Fri, 13 Dec 2024 12:21:26 GMT) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: checkConfigMigrationBranch() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Config migration needed but config migration is disabled and checkbox not checked or not present. (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: ensureDependencyDashboard() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+ INFO: DRY-RUN: Would close Dependency Dashboard (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "title": "Dependency Dashboard"
+DEBUG: validateReconfigureBranch() (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: No reconfigure branch found (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+ INFO: DRY-RUN: Would save repository cache. (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Removing any stale branches (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: config.repoIsOnboarded=true (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: No renovate branches found (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Retrieving issueList (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Retrieving issueList (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Retrieved 0 issues (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Retrieved 0 issues (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: PackageFiles.clear() - Package files deleted (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Branch summary (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "cacheModified": undefined,
+       "baseBranches": [{"branchName": "main", "sha": "f0d12b8cc5b18c9f912cd469e55074989fc17c26"}],
+       "branches": [],
+       "defaultBranch": "main",
+       "inactiveBranches": []
+DEBUG: Renovate repository PR statistics (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "stats": {"total": 0, "open": 0, "closed": 0, "merged": 0}
+DEBUG: Repository result: done, status: onboarded, enabled: true, onboarded: true (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+DEBUG: Repository timing splits (milliseconds) (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "splits": {"init": 787, "extract": 983, "lookup": 13, "onboarding": 0, "update": 219},
+       "total": 2771
+DEBUG: Package cache statistics (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "get": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0},
+       "set": {"count": 0, "avgMs": 0, "medianMs": 0, "maxMs": 0, "totalMs": 0}
+DEBUG: HTTP statistics (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "hosts": {
+         "api.github.com": {
+           "count": 5,
+           "reqAvgMs": 320,
+           "reqMedianMs": 315,
+           "reqMaxMs": 407,
+           "queueAvgMs": 0,
+           "queueMedianMs": 0,
+           "queueMaxMs": 1
+         }
+       },
+       "requests": 5
+DEBUG: HTTP cache statistics (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "https://api.github.com": {
+         "/repos/uluzox/renovate-minimal-reproduction-gitlab-registry-url/contents/renovate.json5": {
+           "hit": 0,
+           "miss": 1
+         },
+         "/repos/uluzox/renovate-minimal-reproduction-gitlab-registry-url/pulls": {
+           "hit": 0,
+           "miss": 1
+         }
+       }
+DEBUG: Lookup statistics (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+ INFO: Repository finished (repository=uluzox/renovate-minimal-reproduction-gitlab-registry-url)
+       "cloned": true,
+       "durationMs": 2771
+DEBUG: Checking file package cache for expired items
+DEBUG: Deleted 0 of 0 file cached entries in 5ms
