@@ -115,4 +115,4 @@ against the stated registryUrl, namely https://gitlab.com.
 ## Link to the Renovate issue or Discussion
 
 Link to the Renovate Discussion:
-[https://github.com/renovatebot/renovate/discussions/33090](git@github.com:uluzox/renovate-minimal-reproduction-gitlab-registry-url.git)
+[https://github.com/renovatebot/renovate/discussions/33090](https://github.com/renovatebot/renovate/discussions/33090)
