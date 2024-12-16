@@ -1,82 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:best-practices",
-    ":automergeDigest",
-    "customManagers:dockerfileVersions",
-    "customManagers:gitlabPipelineVersions",
-    "workarounds:reduceRepologyServerLoad",
-    "workarounds:typesNodeVersioning",
-    "mergeConfidence:all-badges"
-  ],
-  "ignorePresets": [
-    ":ignoreModulesAndTests",
-    "docker:pinDigests",
-    ":semanticPrefixFixDepsChoreOthers"
+    "customManagers:dockerfileVersions"
   ],
   "enabledManagers": [
-    "composer",
-    "custom.regex",
-    "dockerfile",
-    "gitlabci",
-    "gitlabci-include",
-    "gomod",
-    "kubernetes",
-    "helmv3",
-    "kustomize",
-    "npm",
-    "poetry",
-    "pre-commit",
-    "terraform",
-    "terraform-version"
+    "custom.regex"
   ],
   "packageRules": [
-    {
-      "matchDepTypes": [
-        "dependencies",
-        "require"
-      ],
-      "semanticCommitType": "fix"
-    },
-    {
-      "matchDepTypes": [
-        "dependencies",
-        "extras"
-      ],
-      "matchManagers": [
-        "poetry"
-      ],
-      "semanticCommitType": "fix"
-    },
-    {
-      "description": [
-        "Enable docker digest pinning"
-      ],
-      "matchDatasources": [
-        "docker"
-      ],
-      "pinDigests": true
-    },
-    {
-      "description": [
-        "except where explicitly disabled"
-      ],
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchDepTypes": [
-        "no-digest"
-      ],
-      "pinDigests": false
-    },
     {
       "description": [
         "Configure registry URLs"
       ],
       "matchDatasources": [
-        "gitlab-releases",
-        "gitlab-tags",
-        "gitlab-packages"
+        "gitlab-releases"
       ],
       "registryUrls": [
         "https://self-hosted-gitlab.com/"
